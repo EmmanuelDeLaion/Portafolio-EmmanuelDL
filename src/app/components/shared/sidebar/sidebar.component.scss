@@ -1,6 +1,5 @@
 .main {
-    margin-left: 5rem;
-    padding: 1rem;
+     margin-left: 80px;
 }
 
 .navbar-sidebar {
@@ -41,6 +40,7 @@
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     color: var(--colorPrimario);
+    background-color: #0a14207a;
 }
 
 .link-text {
@@ -48,10 +48,11 @@
     margin-left: 1rem;
 }
 
-.nav-link .svg {
+.nav-link .iconos {
     width: 2rem;
     min-width: 2rem;
-    margin: 0 1.5rem;
+    margin: 0 1rem;
+    font-size: 20px;
 }
 
 .fa-primary {
@@ -69,12 +70,9 @@
 
 .logo {
     font-weight: bold;
-    text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: center;
-    color: var(--text-secondary);
-    background: var(--bg-secondary);
-    font-size: 1.5rem;
+    font-size: 18px;
     letter-spacing: 0.3ch;
     width: 100%;
 }
