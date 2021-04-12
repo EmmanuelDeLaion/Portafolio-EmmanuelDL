@@ -6,7 +6,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { HomeComponent } from './components/home/home.component';
 import { ProjectcongresoComponent } from './components/projects/projectcongreso/projectcongreso.component';
 import { ProjectcotacytComponent } from './components/projects/projectcotacyt/projectcotacyt.component';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
@@ -14,7 +14,7 @@ const routes: Routes = [
     path: '', component: HomeComponent
   },
   {
-    path: 'home', component: NavbarComponent, children: [
+    path: 'home', component: SidebarComponent, children: [
       {
         path:'aboutme', component: AboutmeComponent
       },
