@@ -5,6 +5,7 @@
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
+    background-size: cover;
 }
 
 .circulo-home{
@@ -27,11 +28,11 @@
 
 .titulo-cargo{
     z-index: 2;
-    position: absolute;
+    position: relative;
     text-align: center;
-    font-size: 100px;
+    font-size: 110px;
     font-weight: 800;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--colorBlanco);
@@ -39,9 +40,10 @@
 
 .titulo-cargo-sec{
     z-index: 2;
+    top: 21%;
     position: relative;
     text-align: center;;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: lighter;
     color: var(--colorBlanco);
 }
@@ -55,6 +57,7 @@
     border: 1px solid #ff0095;
     background-color: #ff00952d;
     color: var(--colorBlanco);
+    border-radius: 100px;
 }
 .btn-ver-mas:hover{
     background-color: var(--colorPrimario);
