@@ -1,2 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --colorPrimario: #FF0096;
+    --colorSecundario: #251A69;
+    --colorAmarillo: #FFEB3B;
+    --colorNegro: #020B16;
+    --colorBlanco: #fff;
+}
