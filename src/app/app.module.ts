@@ -11,6 +11,10 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+// inicio service
+import { CargarScriptsService } from './cargar-scripts.service'; 
+ 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,9 @@ import { SidebarComponent } from './components/shared/sidebar/sidebar.component'
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CargarScriptsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
