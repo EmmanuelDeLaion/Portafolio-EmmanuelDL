@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectcotacytComponent } from './components/projects/projectcotacyt/projectcotacyt.component';
 import { ProjectcongresoComponent } from './components/projects/projectcongreso/projectcongreso.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ProjectcongresoComponent } from './components/projects/projectcongreso/
     HomeComponent,
     ContactComponent,
     ProjectcotacytComponent,
-    ProjectcongresoComponent
+    ProjectcongresoComponent,
+    AboutmeComponent,
+    SkillsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
