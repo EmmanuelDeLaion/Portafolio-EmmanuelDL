@@ -12,3 +12,24 @@
     --colorNegro: #020B16;
     --colorBlanco: #fff;
 }
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--colorBlanco);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--colorNegro);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--colorNegro);
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+ 
