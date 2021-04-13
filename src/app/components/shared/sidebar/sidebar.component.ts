@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CargarScriptsService } from './../../../cargar-scripts.service'
 
 @Component({
   selector: 'app-sidebar',
@@ -9,9 +8,7 @@ import { CargarScriptsService } from './../../../cargar-scripts.service'
 export class SidebarComponent implements OnInit {
 
   constructor(
-    private _CargaScripts: CargarScriptsService
-  ) { 
-    _CargaScripts.Carga(["funciones/tema"]);
+  ) {
   }
 
   ngOnInit(): void {
