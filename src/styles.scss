@@ -1,35 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-*{
-    font-family: 'Poppins', sans-serif;
-}
-
 :root{
     --colorPrimario: #FF0096;
     --colorSecundario: #251A69;
     --colorAmarillo: #FFEB3B;
     --colorNegro: #020B16;
     --colorBlanco: #fff;
+    scroll-behavior: smooth;
 }
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 ::-webkit-scrollbar-track {
-    background: var(--colorBlanco);
+    background: var(--colorSecundario);
 }
 ::-webkit-scrollbar-thumb {
     background: var(--colorNegro);
+    border-radius: 5px;
 }
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*::selection {
+    background: var(--colorPrimario);
+    color: var(--colorBlanco);
+}
+
+*::-moz-selection {
+    background: var(--colorPrimario);
+    color: var(--colorBlanco);
+}
+
+
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--colorNegro);
+    background: var(--colorPrimario);
 }
-
-body{
-    scroll-behavior: smooth;
-}
-
+ 
  
