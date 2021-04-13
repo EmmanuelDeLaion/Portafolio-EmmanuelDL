@@ -8,6 +8,8 @@
     --colorNegro: #020B16;
     --colorBlanco: #fff;
 
+    --colorPrimarioTransparent: #ff00956c;
+
     --text-sm: 12px;
     scroll-behavior: smooth;
 }
@@ -97,6 +99,10 @@
     font-weight: 200;
 }
 
+.text-tec{
+    font-weight: 500;
+    color: var(--colorBlanco);
+}
  
 
 /* botones  */
