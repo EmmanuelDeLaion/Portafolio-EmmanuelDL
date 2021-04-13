@@ -77,3 +77,18 @@
     border-radius: 5px;
     margin: 2px;
 }
+
+
+
+// botones 
+.btn-see-more-project{
+    border-radius: 100px;
+    border: 1px solid var(--colorPrimario);
+    background-color: var(--colorPrimarioTransparent);
+    color: var(--colorBlanco);
+    text-align: center;
+    &:hover{
+        background-color: var(--colorPrimario);
+        color: var(--colorBlanco);
+    }
+}
