@@ -1,0 +1,25 @@
+.img-contact {
+    position: absolute;
+    left: 25%;
+    width: 200px;
+    opacity: 0.5;
+}
+
+// titulos 
+.titulo-contactame{
+    font-weight: bold;
+}
+
+/* inputs  */
+.inputs {
+    background-color: transparent;
+    color: var(--color-black);
+    border-radius: 20px;
+}
+ 
+
+@media (max-width: 570px) {
+    .titulo-experiencia-contactame::before {
+        font-size: 30px;
+    }
+}
