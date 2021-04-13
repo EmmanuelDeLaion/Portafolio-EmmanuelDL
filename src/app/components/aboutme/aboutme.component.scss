@@ -1,54 +1,3 @@
-.portada-about {
-    background-image: url("/assets/images/portada-about.png");
-    height: 100vh;
-    min-height: 500px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.text-aboutme {
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    animation: slideIn 0.25s ease-out alternate;
-}
-
-.title-about {
-    font-weight: 800;
-    font-size: 100px;
-    -webkit-text-stroke: 1px var(--colorBlanco);
-    color: transparent;
-}
-
-.title-me {
-    font-size: 100px;
-    font-weight: 800;
-    color: var(--colorBlanco);
-}
-
-.p-about {
-    color: var(--colorBlanco);
-    font-size: 20px;
-    font-weight: 400;
-}
-
-// botones
-.btn-ver-mas {
-    z-index: 4;
-    position: relative;
-    border: 1px solid #ff0095;
-    background-color: #ff00952d;
-    color: var(--colorBlanco);
-    border-radius: 100px;
-}
-.btn-ver-mas:hover {
-    background-color: var(--colorPrimario);
-}
-
 .btn-cv {
     z-index: 4;
     position: relative;
@@ -59,32 +8,31 @@
     font-weight: 600;
 }
 
-.img-perfil-aboutme{
+.img-perfil-aboutme {
     width: 500px;
 }
 
-
-// secciones about 
-.seccion-aboutme{
+// secciones about
+.seccion-aboutme {
     margin-top: 50px;
     padding: 80px;
     position: relative;
 }
 
-// titulos about me 
-.titulos-aboutme{
+// titulos about me
+.titulos-aboutme {
     font-weight: bold;
     font-size: 50px;
     color: var(--colorPrimario);
-
 }
-.subtitulo-aboutme{
+.subtitulo-aboutme {
     font-weight: bold;
 }
 
-.description-aboutme{
+.description-aboutme {
     font-size: 14px;
 }
+
 
 
 
@@ -94,7 +42,6 @@
     }
 }
 
-
 @media only screen and (max-width: 380px) {
     .text-aboutme {
         position: absolute;
@@ -102,11 +49,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    // secciones 
-    .seccion-aboutme{
+    // secciones
+    .seccion-aboutme {
         padding: 10px;
     }
-    .img-perfil-aboutme{
+    .img-perfil-aboutme {
         margin-top: 50px;
         width: 200px;
         display: flex;
