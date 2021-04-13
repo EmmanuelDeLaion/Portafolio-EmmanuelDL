@@ -7,6 +7,7 @@
     background-color: var(--colorNegro);
     transition: width 600ms ease;
     overflow: hidden;
+    z-index: 10;
 }
 
 .navbar-sidebar-nav {

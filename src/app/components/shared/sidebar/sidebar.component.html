@@ -20,28 +20,29 @@
         </li>
         <!-- enlaces  -->
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" [routerLink]="['home']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">
                 <i class=" iconos fas fa-home"></i>
                 <span class="link-text">Home</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" [routerLink]="['aboutme']" routerLinkActive="active">
                 <i class="iconos far fa-address-card"></i>
                 <span class="link-text">About me</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" [routerLink]="['skills']" routerLinkActive="active">
                 <i class=" iconos fas fa-align-left"></i>
                 <span class="link-text">Skills</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" [routerLink]="['experience']" routerLinkActive="active">
                 <i class="iconos fas fa-briefcase"></i>
                 <span class="link-text">Experience</span>
             </a>
@@ -53,5 +54,5 @@
 </nav>
 
 <div class="main">
-<app-home></app-home>
+    <router-outlet></router-outlet>
 </div>

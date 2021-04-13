@@ -11,10 +11,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent
-  },
-  {
-    path: 'home', component: SidebarComponent, children: [
+    path: '', component: SidebarComponent, children: [
       {
         path:'aboutme', component: AboutmeComponent
       },
@@ -32,7 +29,16 @@ const routes: Routes = [
       },
       {
         path: 'project-cotacyt', component: ProjectcotacytComponent
+      }, 
+      {
+        path:'home', component:HomeComponent
+      },
+      {
+        path:'', redirectTo: 'home', pathMatch:'full'
       }
+      
+
+      
     ]
   }
 ];
