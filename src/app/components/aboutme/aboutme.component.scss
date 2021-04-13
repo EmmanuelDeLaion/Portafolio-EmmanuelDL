@@ -54,7 +54,30 @@
     background-color: #ff0095b2;
     color: var(--colorBlanco);
     border-radius: 100px;
+    font-weight: 600;
 }
+
+.img-perfil-aboutme{
+    width: 500px;
+}
+
+
+// secciones about 
+.seccion-aboutme{
+    margin-top: 50px;
+    padding: 80px;
+}
+
+// titulos about me 
+.titulos-aboutme{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--colorPrimario);
+}
+.subtitulo-aboutme{
+    font-weight: bold;
+}
+
 
 @media only screen and (max-width: 380px) {
     .text-aboutme {
@@ -62,5 +85,16 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    // secciones 
+    .seccion-aboutme{
+        padding: 10px;
+    }
+    .img-perfil-aboutme{
+        margin-top: 50px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
