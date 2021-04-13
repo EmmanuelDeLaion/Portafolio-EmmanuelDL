@@ -155,7 +155,7 @@
 
 }
 .portada-skills{
-    
+
 }
 
 .text-portada {
@@ -183,5 +183,20 @@
     color: var(--colorBlanco);
     font-size: 20px;
     font-weight: 400;
+}
+
+
+
+
+// querys 
+
+@media only screen and (max-width: 380px) {
+    .text-portada {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+ 
 }
 
