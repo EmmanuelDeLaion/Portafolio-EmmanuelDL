@@ -18,7 +18,7 @@
 .card-project .title {
     padding: 1rem;
     text-align: right;
-    color: green;
+    color: var(--colorPrimario);
     font-weight: bold;
     font-size: 12px;
 }
@@ -44,7 +44,7 @@
     position: absolute;
     border-radius: 50%;
     border: 6px solid white;
-    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+    background-image: linear-gradient(-60deg, var(--colorNegro) 0%, var(--colorPrimario) 100%);
     top: 15px;
     left: 85px;
 }
@@ -71,7 +71,7 @@ path {
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-image: url("https://m.media-amazon.com/images/S/aplus-media/vc/cab6b08a-dd8f-4534-b845-e33489e91240._CR75,0,300,300_PT0_SX300__.jpg");
+    background-image: url(/assets/images/project-experience/cotacyt.png);
     background-position: bottom center;
     background-size: cover;
 }
@@ -80,11 +80,11 @@ path {
     border: none;
     background: none;
     font-size: 24px;
-    color: #8bc34a;
+    color: var(--colorPrimario);
     cursor: pointer;
     transition: 0.5s;
     &:hover {
-        color: #4caf50;
+        color: var(--colorNegro);
         transform: rotate(22deg);
     }
 }
