@@ -1,4 +1,60 @@
-.portada-about{
-    background-image: url('/assets/images/portada.jpg');
+.portada-about {
+    background-image: url("/assets/images/portada-about.png");
     height: 100vh;
+    min-height: 500px;
+    overflow-x: hidden;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-aboutme {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.title-about {
+    font-weight: 800;
+    font-size: 100px;
+    -webkit-text-stroke: 1px var(--colorBlanco);
+    color: transparent;
+}
+
+.title-me {
+    font-size: 100px;
+    font-weight: 800;
+    color: var(--colorBlanco);
+}
+
+.p-about {
+    color: var(--colorBlanco);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+// boton 
+.btn-ver-mas{
+    z-index: 4;
+    position: relative;
+    border: 1px solid #ff0095;
+    background-color: #ff00952d;
+    color: var(--colorBlanco);
+    border-radius: 100px;
+}
+.btn-ver-mas:hover{
+    background-color: var(--colorPrimario);
+}
+
+
+
+@media only screen and (max-width: 380px) {
+    .text-aboutme {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
