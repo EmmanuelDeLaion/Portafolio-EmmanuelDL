@@ -1,7 +1,6 @@
- 
-// home 
-.portada-home{
-    background-image: url(/assets/images/portada.jpg);
+// home
+.portada-home {
+    background-image: url(/assets/images/portada-h.jpg);
     height: 100vh;
     min-height: 500px;
     overflow-y: hidden;
@@ -10,25 +9,30 @@
     background-size: cover;
 }
 
-.circulo-home{
+.circulo-home {
     z-index: 1;
     position: absolute;
     width: 700px;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    animation: slideIn 0.75s ease-in-out forwards;
+
 }
 
-.img-perfil-home{
+.img-perfil-home {
     z-index: 3;
     position: absolute;
     width: 650px;
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+
 }
 
-.titulo-cargo{
+.titulo-cargo {
     z-index: 2;
     position: relative;
     text-align: center;
@@ -40,17 +44,17 @@
     color: var(--colorBlanco);
 }
 
-.titulo-cargo-sec{
+.titulo-cargo-sec {
     z-index: 2;
     top: 21%;
     position: relative;
-    text-align: center;;
+    text-align: center;
     font-size: 25px;
     font-weight: lighter;
     color: var(--colorBlanco);
 }
 
-.btn-about-me{
+.btn-about-me {
     z-index: 4;
     position: absolute;
     top: 85%;
@@ -61,7 +65,16 @@
     color: var(--colorBlanco);
     border-radius: 100px;
 }
-.btn-about-me:hover{
+.btn-about-me:hover {
     background-color: var(--colorPrimario);
 }
 
+
+
+
+@keyframes slideIn {
+    0% {
+        transform: scale(10);
+    }
+   
+}
