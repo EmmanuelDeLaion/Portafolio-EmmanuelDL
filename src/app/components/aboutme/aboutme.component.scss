@@ -3,6 +3,7 @@
     height: 100vh;
     min-height: 500px;
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
     background-size: cover;
     background-attachment: fixed;
@@ -13,6 +14,7 @@
     top: 40%;
     left: 30%;
     transform: translate(-50%, -50%);
+    animation: slideIn 0.25s ease-out alternate;
 }
 
 .title-about {
@@ -73,9 +75,22 @@
     font-weight: bold;
     font-size: 50px;
     color: var(--colorPrimario);
+
 }
 .subtitulo-aboutme{
     font-weight: bold;
+}
+
+.description-aboutme{
+    font-size: 14px;
+}
+
+
+
+@keyframes slideIn {
+    0% {
+        transform: scale(50);
+    }
 }
 
 
