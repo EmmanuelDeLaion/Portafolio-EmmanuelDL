@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare function funciona():void;
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolioemmanueldl';
+
+  constructor(){
+
+  }
 }

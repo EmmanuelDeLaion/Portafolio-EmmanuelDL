@@ -33,7 +33,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/funciones.js"
+            ]
           },
           "configurations": {
             "production": {
