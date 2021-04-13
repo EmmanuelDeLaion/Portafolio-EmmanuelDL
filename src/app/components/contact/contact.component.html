@@ -1,5 +1,68 @@
-<p>contact works!</p>
+<section class="color-white-fondo seccion-contactame position-relative" id="contacto">
+    <img class="imagen-forma-footer" src="assets/images/forma1.png" alt="">
+    <img class="imagen-forma-footer-derecha" src="assets/images/forma3.png" alt="">
+
+    <div class="container">
+        <div class="justify-content-center row ">
+            <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h1 class="titulo-contactame position-relative text-center">Contáctame
+                </h1>
+                <p class="text-center">Para mayor información <span class="color-primary"> contáctame</span>
+                </p>
+                <p class="text-sm text-center"> <i class="fas fa-envelope"></i>
+                    deleon.lerma.17163@itsmante.edu.mx
+                </p>
+                <p class="text-sm text-center"> <i class="fab fa-whatsapp"></i> +52 (831)-254-2110</p>
+
+                <img class="img-contact" src="/assets/images/ilustraciones/contact2.svg" alt="">
+            </div>
+            <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <p class="text-sm">Ingrese sus datos para contactarme</p>
+
+                <!-- <form [formGroup]="formContacto"> -->
 
 
+                <form>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input formControlName="nombre" type="text" class="form-control inputs" placeholder="Nombre"
+                                id="nombre" aria-describedby="emailHelp">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                    </div>
 
-<app-footer></app-footer>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input formControlName="correo" type="email" class="form-control inputs"
+                                placeholder="Correo" id="correo_" aria-describedby="emailHelp">
+                            <label for="correo_">Correo</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input formControlName="numero" type="tel" class="form-control inputs"
+                                placeholder="teléfono" id="telefono" aria-describedby="telefono">
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <textarea formControlName="mensaje" class="form-control inputs" placeholder="mensaje"
+                                id="mensaje" rows="1" style="height: 100px"></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn w-100 btn-ver-mas mb-5">Enviar
+                    </button>
+
+                    <!-- <button [disabled]="formContacto.invalid" (click)="enviarMensaje()" type="button"
+                        class="btn w-100 button-primary-normal mb-5">Enviar
+                    </button> -->
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
