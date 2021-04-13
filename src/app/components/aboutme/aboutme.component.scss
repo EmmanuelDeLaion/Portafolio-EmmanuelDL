@@ -34,9 +34,8 @@
     font-weight: 400;
 }
 
-
-// boton 
-.btn-ver-mas{
+// botones
+.btn-ver-mas {
     z-index: 4;
     position: relative;
     border: 1px solid #ff0095;
@@ -44,11 +43,18 @@
     color: var(--colorBlanco);
     border-radius: 100px;
 }
-.btn-ver-mas:hover{
+.btn-ver-mas:hover {
     background-color: var(--colorPrimario);
 }
 
-
+.btn-cv {
+    z-index: 4;
+    position: relative;
+    border: 1px solid #ff0095;
+    background-color: #ff0095b2;
+    color: var(--colorBlanco);
+    border-radius: 100px;
+}
 
 @media only screen and (max-width: 380px) {
     .text-aboutme {
