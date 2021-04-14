@@ -18,7 +18,6 @@
     transform: translate(-50%, -50%);
 
     animation: slideIn 0.75s ease-in-out forwards;
-
 }
 
 .img-perfil-home {
@@ -67,9 +66,17 @@
     background-color: var(--colorPrimario);
 }
 
-
 @keyframes slideIn {
     0% {
         transform: scale(10);
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .titulo-cargo-sec {
+        top: 23%;
+    }
+    .titulo-cargo {
+        font-size: 60px;
     }
 }
