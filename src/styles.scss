@@ -1,19 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
-:root{
-    --colorPrimario: #FF0096;
-    --colorSecundario: #251A69;
-    --colorAmarillo: #FFEB3B;
-    --colorNegro: #020B16;
+:root {
+    --colorPrimario: #ff0096;
+    --colorSecundario: #251a69;
+    --colorAmarillo: #ffeb3b;
+    --colorNegro: #020b16;
     --colorBlanco: #fff;
-
+    --colorCelesteSecundario: #00c4f3;
     --colorPrimarioTransparent: #ff00956c;
 
     --text-sm: 12px;
     scroll-behavior: smooth;
 }
-
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -26,9 +25,8 @@
     border-radius: 5px;
 }
 
-
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,75 +42,66 @@
     color: var(--colorBlanco);
 }
 
-
-
 ::-webkit-scrollbar-thumb:hover {
     background: var(--colorPrimario);
 }
 
-
-
 /* colores  */
-.color-black{
+.color-black {
     /* background-color: var(--color-black); */
     color: var(--colorNegro);
 }
 
-.color-black-footer{
+.color-black-footer {
     background-color: var(--colorNegro);
 }
 
-.color-black-fondo{
+.color-black-fondo {
     background-color: var(--colorNegro);
-    color:  var(--colorBlanco);
-}
-
-.color-white{
     color: var(--colorBlanco);
 }
 
-.color-white-fondo{
+.color-white {
+    color: var(--colorBlanco);
+}
+
+.color-white-fondo {
     background-color: var(--colorBlanco);
 }
 
-
-.color-primary{
+.color-primary {
     color: var(--colorPrimario);
 }
 
-.color-primary-fondo{
+.color-primary-fondo {
     background-color: var(--colorPrimario);
     color: var(--colorBlanco);
 }
 
-
-
-
 /* textos  */
-.text-sm{
+.text-sm {
     font-size: var(--text-sm);
 }
 
-.title-primary{
+.title-primary {
     font-weight: bold;
 }
 
-.title-secondary{
+.title-secondary {
     font-weight: 200;
 }
 
-.text-tec{
+.text-tec {
     font-weight: 500;
     color: var(--colorBlanco);
 }
- 
 
-.titulos-aboutme{
+.titulos-aboutme {
     font-weight: bold;
     color: var(--colorPrimario);
 }
 
-.titulo-whoiam::before{
+.titulo-whoiam::before {
     content: "Who I Am?";
     position: absolute;
     font-size: 50px;
@@ -120,27 +109,25 @@
     top: 0;
 }
 
-.titulo-education::before{
+.titulo-education::before {
     content: "Education";
     position: absolute;
     font-size: 50px;
     opacity: 0.1;
     top: 0;
- }
-.titulo-passion::before{
+}
+.titulo-passion::before {
     content: "Passion";
     position: absolute;
     font-size: 50px;
     opacity: 0.1;
     top: 10;
- }
- 
+}
 
-.title-pasion{
+.title-pasion {
     color: var(--colorPrimario);
     font-weight: 500;
 }
-
 
 /* inputs  */
 .inputs {
@@ -148,35 +135,30 @@
     color: var(--color-black);
     border-radius: 20px;
 }
- 
-
-
 
 /* botones  */
-.button-primary-outline{
+.button-primary-outline {
     color: var(--colorPrimario);
     background-color: transparent;
     border-radius: 100px;
     border: 1px solid var(--colorPrimario);
 }
 
-.button-primary-outline:hover{
+.button-primary-outline:hover {
     color: var(--colorBlanco);
     background-color: var(--colorPrimario);
 }
 
-.button-primary-normal{
+.button-primary-normal {
     color: var(--colorBlanco);
     background-color: var(--colorPrimario);
 }
 
-.button-primary-normal:hover{
+.button-primary-normal:hover {
     color: var(--colorBlanco);
     background-color: var(--colorSecundario);
 }
 
-
- 
 .btn-ver-mas {
     z-index: 4;
     position: relative;
@@ -189,8 +171,36 @@
     background-color: var(--colorPrimario);
 }
 
+/* boton subir  */
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: var(--colorPrimario);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 50px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
 
-// portada 
+// portada
 .portada {
     height: 100vh;
     min-height: 500px;
@@ -201,14 +211,12 @@
     background-attachment: fixed;
 }
 
-.portada-about{
+.portada-about {
     background-image: url("/assets/images/portada-about.png");
 }
-.portada-experience{
-
+.portada-experience {
 }
-.portada-skills{
-
+.portada-skills {
 }
 
 .text-portada {
@@ -238,9 +246,6 @@
     font-weight: 400;
 }
 
-
-
-
 /* social networks  */
 .social-media {
     color: var(--colorPrimario);
@@ -251,10 +256,6 @@
 .social-media:hover {
     color: var(--colorPrimario);
 }
-
-
-
-
 
 // extras
 .editorial {
@@ -275,7 +276,7 @@
     &:nth-child(1) {
         animation-delay: -2s;
     }
- }
+}
 .parallax2 > use {
     animation: move-forever2 8s linear infinite;
     &:nth-child(1) {
@@ -294,6 +295,8 @@
         animation-delay: -2s;
     }
 }
+
+// keyframes
 @keyframes move-forever1 {
     0% {
         transform: translate(85px, 0%);
@@ -327,11 +330,7 @@
     }
 }
 
-
-
-
-
-// querys 
+// querys
 
 @media only screen and (max-width: 380px) {
     .text-portada {
@@ -340,24 +339,49 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
- 
 }
-
-
 
 @media (max-width: 570px) {
     .titulo-contactame::before {
         font-size: 30px;
     }
-    .titulo-education::before{
+    .titulo-education::before {
         font-size: 30px;
     }
-    .titulo-passion::before{
+    .titulo-passion::before {
         font-size: 30px;
     }
-    .titulo-whoiam::before{
+    .titulo-whoiam::before {
         font-size: 30px;
     }
 }
 
-
+@media only screen and (max-width: 600px) {
+    .scroll-up-btn {
+        position: fixed;
+        height: 45px;
+        width: 42px;
+        background: var(--colorPrimario);
+        right: 30px;
+        bottom: 150px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+        z-index: 9999;
+        font-size: 30px;
+        border-radius: 50px;
+        border-bottom-width: 2px;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .scroll-up-btn.show {
+        bottom: 100px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .scroll-up-btn:hover {
+        filter: brightness(90%);
+    }
+}
