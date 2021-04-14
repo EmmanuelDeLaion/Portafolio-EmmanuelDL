@@ -86,6 +86,8 @@
 }
 
 
+
+
 /* textos  */
 .text-sm{
     font-size: var(--text-sm);
@@ -104,6 +106,51 @@
     color: var(--colorBlanco);
 }
  
+
+.titulos-aboutme{
+    font-weight: bold;
+    color: var(--colorPrimario);
+}
+
+.titulo-whoiam::before{
+    content: "Who I Am?";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    top: 0;
+}
+
+.titulo-education::before{
+    content: "Education";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    top: 0;
+ }
+.titulo-passion::before{
+    content: "Passion";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    top: 10;
+ }
+ 
+
+.title-pasion{
+    color: var(--colorPrimario);
+    font-weight: 500;
+}
+
+
+/* inputs  */
+.inputs {
+    background-color: transparent;
+    color: var(--color-black);
+    border-radius: 20px;
+}
+ 
+
+
 
 /* botones  */
 .button-primary-outline{
@@ -295,4 +342,22 @@
     }
  
 }
+
+
+
+@media (max-width: 570px) {
+    .titulo-contactame::before {
+        font-size: 30px;
+    }
+    .titulo-education::before{
+        font-size: 30px;
+    }
+    .titulo-passion::before{
+        font-size: 30px;
+    }
+    .titulo-whoiam::before{
+        font-size: 30px;
+    }
+}
+
 

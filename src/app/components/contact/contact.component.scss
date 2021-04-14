@@ -8,8 +8,15 @@
 // titulos 
 .titulo-contactame{
     font-weight: bold;
+    color: var(--colorPrimario);
 }
-
+.titulo-contactame::before{
+    position: absolute;
+    content: "Contact me";
+    font-size: 50px;
+    opacity: 0.1;
+    top: 0;
+}
 /* inputs  */
 .inputs {
     background-color: transparent;
@@ -19,7 +26,7 @@
  
 
 @media (max-width: 570px) {
-    .titulo-experiencia-contactame::before {
+    .titulo-contactame::before {
         font-size: 30px;
     }
 }
