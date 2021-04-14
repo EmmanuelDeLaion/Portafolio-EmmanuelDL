@@ -16,6 +16,7 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     animation: slideIn 0.75s ease-in-out forwards;
 
 }
@@ -65,8 +66,6 @@
 .btn-about-me:hover {
     background-color: var(--colorPrimario);
 }
-
-
 
 
 @keyframes slideIn {
