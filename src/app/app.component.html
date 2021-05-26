@@ -1,8 +1,9 @@
+<div *ngIf="_loadingService"  class="loading">
+    <div class="loading-center d-flex justify-content-center">
+        <div class="spinner-border color-primary" role="status"></div>
+    </div>
+    <p class="text-cargando">Cargando...</p>
+</div>
+
 <router-outlet></router-outlet>
 
-<!-- 
-<app-home><app-home>
-
-<app-footer></app-footer>
-
-<router-outlet></router-outlet> -->

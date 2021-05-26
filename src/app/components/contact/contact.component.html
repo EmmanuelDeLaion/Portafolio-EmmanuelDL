@@ -17,10 +17,8 @@
                 <p class="text-sm">Enter your information to contact me
                 </p>
 
-                <!-- <form [formGroup]="formContacto"> -->
 
-
-                <form>
+                <form [formGroup]="formContacto">
                     <div class="mb-3">
                         <div class="form-floating">
                             <label for="nombre">Name</label>
@@ -32,34 +30,32 @@
                     <div class="mb-3">
                         <div class="form-floating">
                             <label for="correo_">Email</label>
-                            <input formControlName="correo" type="email" class="form-control inputs"
-                                placeholder="" id="correo_" aria-describedby="emailHelp">
+                            <input formControlName="correo" type="email" class="form-control inputs" placeholder=""
+                                id="correo_" aria-describedby="emailHelp">
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <div class="form-floating">
                             <label for="telefono">Phone</label>
-                            <input formControlName="numero" type="tel" class="form-control inputs"
-                                placeholder="" id="telefono" aria-describedby="telefono">
+                            <input formControlName="numero" type="tel" class="form-control inputs" placeholder=""
+                                id="telefono" aria-describedby="telefono">
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <div class="form-floating">
                             <label for="mensaje">Message</label>
-                            <textarea formControlName="mensaje" class="form-control inputs" placeholder=""
-                                id="mensaje" rows="1" style="height: 100px"></textarea>
+                            <textarea formControlName="mensaje" class="form-control inputs" placeholder="" id="mensaje"
+                                rows="1" style="height: 100px"></textarea>
                         </div>
                     </div>
-                    <button type="button" class="btn w-100 btn-ver-mas mb-5">Send
+                    <button [disabled]="formContacto.invalid" (click)="enviarMensaje()" type="button"
+                        class="btn w-100 btn-ver-mas mb-5">Send
                     </button>
-
-                    <!-- <button [disabled]="formContacto.invalid" (click)="enviarMensaje()" type="button"
-                        class="btn w-100 button-primary-normal mb-5">Enviar
-                    </button> -->
-
                 </form>
+
+
             </div>
         </div>
     </div>

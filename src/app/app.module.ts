@@ -11,9 +11,13 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 // inicio service
 import { CargarScriptsService } from './cargar-scripts.service'; 
- 
+import { MessageService } from './services/message.service';
+  
 
 @NgModule({
   declarations: [
@@ -30,10 +34,16 @@ import { CargarScriptsService } from './cargar-scripts.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [
-    CargarScriptsService
+    CargarScriptsService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })

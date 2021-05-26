@@ -171,6 +171,14 @@
     background-color: var(--colorPrimario);
 }
 
+.btn-ver-mas:disabled:hover{
+    position: relative;
+    border: 1px solid #ff0095;
+    background-color: #ff00952d;
+    color: var(--colorBlanco);
+    border-radius: 100px;
+}
+
 /* boton subir  */
 .scroll-up-btn {
     position: fixed;
@@ -301,6 +309,8 @@
         animation-delay: -2s;
     }
 }
+
+ 
 
 // keyframes
 @keyframes move-forever1 {

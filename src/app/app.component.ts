@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadingService } from './services/loading.service';
 declare function funciona():void;
 
 @Component({
@@ -9,6 +10,7 @@ declare function funciona():void;
 export class AppComponent {
   title = 'portafolioemmanueldl';
 
+  public _loadingService: LoadingService;
   constructor(){
 
   }
