@@ -20,7 +20,7 @@
         </li>
         <!-- enlaces  -->
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['home']" routerLinkActive="active"
+            <a class="nav-link" [routerLink]="['home']" onclick="location.href='#portada-home-id'" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact:true}">
                 <i class=" iconos fas fa-home"></i>
                 <span class="link-text">Home</span>
@@ -35,14 +35,15 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['skills']"  onclick="location.href='#skills'">
+            <a class="nav-link" [routerLink]="['skills']" onclick="location.href='#portada-skills-id'">
                 <i class=" iconos fas fa-align-left"></i>
                 <span class="link-text">Skills</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a  class="nav-link" [routerLink]="['experience']" routerLinkActive="active" onclick="location.href='#portada-experience-id'" >
+            <a class="nav-link" [routerLink]="['experience']" routerLinkActive="active"
+                onclick="location.href='#portada-experience-id'">
                 <i class="iconos fas fa-briefcase"></i>
                 <span class="link-text">Experience</span>
             </a>
@@ -54,5 +55,10 @@
 </nav>
 
 <div class="main">
-    <router-outlet></router-outlet>
+    <app-home></app-home>
+    <app-aboutme></app-aboutme>
+    <app-skills></app-skills>
+    <app-experience></app-experience>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
 </div>
