@@ -27,6 +27,7 @@
 
 .description-aboutme {
     font-size: 14px;
+    color: var(--colorText);
 }
 
 .small {
@@ -96,7 +97,7 @@
     }
 
     &:hover {
-        .small {
+        .description-aboutme {
             color: var(--colorBlanco);
         }
         transition: all 0.3s ease-out;
@@ -317,7 +318,7 @@
 }
 
 .time {
-    background: #00c4f3;
+    background: var(--colorPrimario);
     display: inline-block;
     padding: 8px;
 }
