@@ -92,3 +92,39 @@
         color: var(--colorBlanco);
     }
 }
+ 
+
+.btn-box{
+    display: flex;
+    border-bottom: 1px solid var(--colorPrimario);
+    overflow: hidden;
+}
+
+.btn-box .btn-category {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 100px;
+    transition: 0.25s;
+}
+ 
+
+.content-designs{
+    display: none;
+}
+
+#btn-web{
+    background: var(--colorPrimario);
+    color: var(--colorBlanco);
+}
+
+#web{
+    display: block;
+}
+
