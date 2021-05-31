@@ -10,6 +10,8 @@
     --colorCelesteSecundario: #00c4f3;
     --colorPrimarioTransparent: #ff00956c;
 
+    --colorText: #5b6572;
+
     --text-sm: 12px;
     scroll-behavior: smooth;
 }
@@ -117,7 +119,7 @@
     top: 0;
 }
 .titulo-passion::before {
-    content: "Passion";
+    content: "Services";
     position: absolute;
     font-size: 50px;
     opacity: 0.1;
