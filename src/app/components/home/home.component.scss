@@ -9,16 +9,32 @@
     background-size: cover;
 }
 
+.orb {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 140px;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 60px var(--colorPrimario),
+        inset -20px 0 60px var(--colorCelesteSecundario),
+        inset 20px 0 300px var(--colorPrimario),
+        inset -20px 0 300px var(--colorCelesteSecundario),
+          0 0 50px #fff,
+          -10px 0 60px var(--colorPrimario),
+          10px 0 60px var(--colorCelesteSecundario);
+}
+ 
 .circulo-home {
     z-index: 1;
     position: absolute;
-    width: 700px;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     animation: slideIn 0.75s ease-in-out forwards;
 }
+
 
 .img-perfil-home {
     z-index: 3;
