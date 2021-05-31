@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  myScritElementExperience: HTMLScriptElement;
+
+  scriptElementDesigns: HTMLScriptElement;
 
   constructor() { 
-    this.myScritElementExperience = document.createElement("script");
-    this.myScritElementExperience.src = "/assets/js/funcionesaboutme.js";
-    document.body.appendChild(this.myScritElementExperience);
+    this.scriptElementDesigns = document.createElement('script');
+    this.scriptElementDesigns.src = "/assets/js/tabs-designs.js";
+    document.body.appendChild(this.scriptElementDesigns);   
   }
 
   ngOnInit(): void {
