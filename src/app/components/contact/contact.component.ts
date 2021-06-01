@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { MessageService } from '../../services/message.service';
 import { FormGroup, Validators, FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+// loading 
 import { LoadingService } from '../../services/loading.service';
 
 @Component({
@@ -18,7 +19,7 @@ export class ContactComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private _MessageService: MessageService,
-    private _loading: LoadingService
+    private _loadingService: LoadingService
   ) {
     this.formContacto = this.formBuilder.group({
       nombre: ['', [Validators.required]],
@@ -36,7 +37,7 @@ export class ContactComponent implements OnInit {
   }
 
   enviarMensaje() {
-    this._loading.cargando = true;
+    this._loadingService.cargando = true;
     if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.numero != "" && this.formContacto.value.mensaje != "") {
       this._MessageService.sendMessage(this.formContacto.value).subscribe(
         res => {
@@ -50,7 +51,7 @@ export class ContactComponent implements OnInit {
             }
           );
           this.formContacto.reset();
-          this._loading.cargando = false;
+          this._loadingService.cargando = false;
         },
         err => {
         }
@@ -61,7 +62,7 @@ export class ContactComponent implements OnInit {
         title: 'Verifique los campos',
         text: 'Favor de ingresar todos los campos correctamente'
       });
-      this._loading.cargando = false;
+      this._loadingService.cargando = false;
     }
   }
 
