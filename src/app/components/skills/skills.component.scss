@@ -56,7 +56,7 @@
 }
 
 .box .percent svg #ux {
-    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
     stroke: var(--colorPrimario);
 }
 
@@ -83,4 +83,17 @@
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 16px;
+}
+
+/* tecnologias  */
+.imagen-logos-tecnologias {
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+}
+
+.logos {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
