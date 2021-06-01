@@ -11,11 +11,14 @@ var btnAll = document.getElementById("btn-all");
 
 
 // Galeria de imagenes
-var imagenes = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var imagenes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 var galeria = document.getElementById("galeria");
 
-var imagenesMobile = [1, 2, 3, 4];
+var imagenesMobile = [1, 2, 3, 4,5];
 var galeriaMobile = document.getElementById("galeriamobile");
+
+var imagenesWeb = [1, 2, 3, 4, 5, 6];
+var galeriaWeb = document.getElementById("galeriaweb");
 
 function openWeb() {
     // display 
@@ -123,6 +126,16 @@ for (imagen of imagenesMobile) {
     <div class="card">
         <a data-toggle="modal" data-target="#modalall">
             <img class="card-img-top" src="/assets/images/designs/mobile/${imagen}.png" alt="">
+        </a>
+    </div>
+    `
+}
+
+for (imagen of imagenesWeb) {
+    galeriaWeb.innerHTML += `
+    <div class="card">
+        <a data-toggle="modal" data-target="#modalall">
+            <img class="card-img-top" src="/assets/images/designs/web/${imagen}.png" alt="">
         </a>
     </div>
     `
