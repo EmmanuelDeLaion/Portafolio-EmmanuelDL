@@ -14,6 +14,9 @@ var btnAll = document.getElementById("btn-all");
 var imagenes = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var galeria = document.getElementById("galeria");
 
+var imagenesMobile = [1, 2, 3, 4];
+var galeriaMobile = document.getElementById("galeriamobile");
+
 function openWeb() {
     // display 
     web.style.display = "block";
@@ -35,6 +38,7 @@ function openWeb() {
     btnMobile.style.color = "#020b16";
     btnDesktop.style.color = "#020b16";
     btnAll.style.color = "#020b16";
+
 }
 
 function openMobile() {
@@ -109,6 +113,16 @@ for (imagen of imagenes) {
     <div class="card">
         <a data-toggle="modal" data-target="#modalall">
             <img class="card-img-top" src="/assets/images/designs/${imagen}.png" alt="">
+        </a>
+    </div>
+    `
+}
+
+for (imagen of imagenesMobile) {
+    galeriaMobile.innerHTML += `
+    <div class="card">
+        <a data-toggle="modal" data-target="#modalall">
+            <img class="card-img-top" src="/assets/images/designs/mobile/${imagen}.png" alt="">
         </a>
     </div>
     `
