@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class LoadingService {
 
-  public cargando: Boolean = true;
+  public cargando: Boolean = false;
+
   constructor() { 
 
   }
