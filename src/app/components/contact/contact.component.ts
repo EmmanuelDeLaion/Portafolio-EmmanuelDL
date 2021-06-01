@@ -53,7 +53,6 @@ export class ContactComponent implements OnInit {
           this._loading.cargando = false;
         },
         err => {
-
         }
       );
     } else {

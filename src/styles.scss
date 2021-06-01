@@ -175,7 +175,7 @@
     background-color: var(--colorPrimario);
 }
 
-.btn-ver-mas:disabled:hover{
+.btn-ver-mas:disabled:hover {
     position: relative;
     border: 1px solid #ff0095;
     background-color: #ff00952d;
@@ -196,7 +196,7 @@
     color: #fff;
     z-index: 9999;
     font-size: 30px;
-    border-radius: 50px;
+    border-radius: 100%;
     border-bottom-width: 2px;
     cursor: pointer;
     opacity: 0;
@@ -214,8 +214,8 @@
 
 // portada
 .portada {
-    height: 100vh;
-    min-height: 500px;
+    height: 30vh;
+    min-height: 400px;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
@@ -240,7 +240,7 @@
 
 .text-portada {
     position: relative;
-    top: 100px;
+    top: 10%;
     left: 200px;
     animation: slideIn 0.25s ease-out alternate;
 }
@@ -313,8 +313,6 @@
         animation-delay: -2s;
     }
 }
-
- 
 
 // keyframes
 @keyframes move-forever1 {
@@ -568,7 +566,6 @@
         font-weight: 400;
     }
 }
-
 
 @media only screen and (max-width: 370px) {
     .text-portada {
