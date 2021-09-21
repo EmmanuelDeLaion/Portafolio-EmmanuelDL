@@ -39,9 +39,9 @@
 }
 
 .nav-link-enlaces {
-    filter: grayscale(0%) opacity(1);
     color: var(--colorPrimario);
     background-color: #0a14207a;
+    border-right: 5px solid #df49a6;
 }
 
 .nav-link:hover {
@@ -147,5 +147,13 @@
 
     .navbar-sidebar:hover .logo-text {
         left: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 580px) {
+    .nav-link-enlaces{
+        border-right: none;
+        border-top: 5px solid #df49a6;
     }
 }
