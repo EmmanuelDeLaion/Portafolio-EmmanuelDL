@@ -6,7 +6,7 @@
                 </span></h1>
             <p class="p-portada">
                 Contact me for more information <br> </p>
-            
+
         </div>
     </div>
 </div>
@@ -63,9 +63,11 @@
                                 rows="1" style="height: 100px"></textarea>
                         </div>
                     </div>
-                    <button [disabled]="formContacto.invalid" (click)="enviarMensaje()" type="button"
-                        class="btn w-100 btn-ver-mas mb-5">Send
-                    </button>
+                    <div class="d-flex justify-content-end">
+                        <a (click)="enviarMensaje()" class="btn  mb-5">Send
+                        </a>
+                    </div>
+
                 </form>
 
 

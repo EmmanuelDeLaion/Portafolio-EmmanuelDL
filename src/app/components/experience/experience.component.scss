@@ -2,20 +2,7 @@
 .section-project {
     padding: 100px;
 }
-
-// proyectos realizados
-.container-proyects {
-    width: 100%;
-    background: var(--colorNegro);
-    padding: 20px;
-}
-
-.container-proyects-black {
-    width: 100%;
-    background: linear-gradient(to bottom, #12242b, #2e313a);
-    padding: 20px;
-}
-
+ 
 .container-proyects-list {
     background-color: transparent;
     border: 1px solid var(--colorPrimario);
@@ -25,12 +12,17 @@
     cursor: default;
     margin: 120px 0 120px 0;
     min-height: 200px;
+    transform: scale(1);
 }
 
 .container-proyects-list:hover {
-    -webkit-box-shadow: 10px 10px 26px -2px rgba(167, 88, 174, 1);
-    -moz-box-shadow: 10px 10px 26px -2px rgba(167, 88, 174, 1);
-    box-shadow: 10px 10px 26px -2px rgba(167, 88, 174, 1);
+    -webkit-box-shadow: 11px 14px 21px -11px rgba(255, 0, 150, 0.68);
+    box-shadow: 11px 14px 21px -11px rgba(255, 0, 150, 0.68);
+    transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+    -o-transform: scale(1.025);
 }
 
 /* imagenes proyectos  */

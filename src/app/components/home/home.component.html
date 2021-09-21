@@ -1,19 +1,10 @@
-<div class="portada-home" id="portada-home-id">
-    <!-- <div class="orb circulo-home"></div> -->
-
-
+<div class="portada-home" >
+    <div class="circulo circulo-home"></div>
     <img class="img-perfil-home" src="/assets/images/img-perfil1.png" alt="">
-    <h3 class="titulo-cargo-sec">Hi, My name is Emmanuel </h3>
-    <h1 class="titulo-cargo typing">FrontEnd Developer</h1>
-
-
+    <h3 class="titulo-cargo-sec">Hello, my name is Emmanuel. I am </h3>
+    <h1 class="titulo-cargo txt-rotate" data-period="2000" data-rotate='[ "UX Designer.", "FrontEnd."]'></h1>
     <div class="botones-home">
-        <button class="btn btn-home-about mr-2 mt-2" onclick="location.href='#portada-aboutme-id'"
-            [routerLink]="['/aboutme']" routerLinkActive="active"><i class="far fa-address-card"></i> About me</button>
-
-        <button class="btn btn-home-about  mt-2" onclick="location.href='#portada-experience-id'"
-            [routerLink]="['/aboutme']" routerLinkActive="active"> <i class="iconos fas fa-briefcase"></i> Work
-            Experience</button>
+        <a href="#portada-aboutme-id" class="btn">About me</a>
+        <a href="#portada-experience-id" class="btn">Work Experience</a>
     </div>
-
 </div>

@@ -20,7 +20,7 @@
         </li>
         <!-- enlaces  -->
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['home']" onclick="location.href='#portada-home-id'"
+            <a class="nav-link" href="#portada-home-id"
                 routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
                 <i class=" iconos fas fa-home"></i>
                 <span class="link-text">Home</span>
@@ -28,22 +28,21 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['aboutme']" onclick="location.href='#portada-aboutme-id'">
+            <a class="nav-link" href="#portada-aboutme-id">
                 <i class="iconos far fa-address-card"></i>
                 <span class="link-text">About me</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['skills']" onclick="location.href='#portada-skills-id'">
+            <a class="nav-link" href="#portada-skills-id">
                 <i class=" iconos fas fa-align-left"></i>
                 <span class="link-text">Skills</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="['experience']" routerLinkActive="active"
-                onclick="location.href='#portada-experience-id'">
+            <a class="nav-link" href="#portada-experience-id">
                 <i class="iconos fas fa-briefcase"></i>
                 <span class="link-text">Experience</span>
             </a>
@@ -55,10 +54,32 @@
 </nav>
 
 <div class="main">
-    <app-home></app-home>
-    <app-aboutme></app-aboutme>
-    <app-skills></app-skills>
-    <app-experience></app-experience>
-    <app-contact></app-contact>
-    <app-footer></app-footer>
+    <section id="portada-home-id">
+        <app-home></app-home>
+    </section>
+
+    <section id="portada-aboutme-id">
+        <app-aboutme></app-aboutme>
+    </section>
+
+    <section id="portada-skills-id">
+        <app-skills></app-skills>
+    </section>
+
+    <section id="portada-experience-id">
+        <app-experience></app-experience>
+    </section>
+
+    <section id="portada-home-id">
+        <app-contact></app-contact>
+    </section>
+
+    <section id="portada-home-id">
+        <app-footer></app-footer>
+    </section>
+
+
+
+
+
 </div>
